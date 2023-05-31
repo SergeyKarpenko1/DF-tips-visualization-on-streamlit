@@ -4,8 +4,8 @@ import seaborn as sns  # импортируем библиотеку для по
 import pandas as pd  # импортируем библиотеку для работы с таблицами
 
 # загружаем датасет tips.csv в переменную tips
-tips = pd.read_csv(
-    r'/Users/sergey/Downloads/drive-download-20230522T162309Z-001/tips.csv')
+path = 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv'
+tips = pd.read_csv(path)
 
 # выводим сообщение для пользователя
 st.write("Для выбора нужного графика нажмите на значок '>' в левом верхнем углу!")
